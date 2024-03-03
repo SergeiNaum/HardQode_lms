@@ -7,7 +7,7 @@
 
 ---
 ```
-docker pull sergeynaum/HardQode_lms:latest
+docker pull sergeynaum/hardqodelms:latest
 ```
 ---
 ##### Start the container by running the command
@@ -16,6 +16,14 @@ make docker_start
 ```
 ---
 ##### CONGRATULATIONS THE CONTAINER IS UP AND RUNNING AND THE API IS READY FOR TESTING_🚀
+---
+
+##### If you need stop container use command
+---
+
+```
+make docker_stop
+```
 
 ---
 ### Available methods for API requestsAvailable methods for API requests
@@ -37,3 +45,8 @@ API for displaying product statistics.
 curl http://127.0.0.1:8000/api/products/statistics/
 ```
 
+Start all tests
+
+```
+make tests
+```
